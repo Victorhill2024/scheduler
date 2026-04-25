@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: #faf3e8;
+    color: #1a1a1a;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background-color: #e8a838;
+    color: #0d3b3b;
+  }
+  /* Strip the cream background from native date/time pickers in some browsers */
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"] {
+    color-scheme: light;
+  }
+}
